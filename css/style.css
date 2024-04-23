@@ -1,0 +1,147 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e0e0;
+    color: #444444;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    margin: 0 0 10px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 1024px;
+}
+
+.main>div {
+    border: 2px solid #303030;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 15px grey;
+}
+
+.menu {
+    background-color: #5c4b51;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px ;
+}
+
+.menu ul li i {
+    color: white;
+    padding-right: 10px;
+}
+
+.menu a {
+    color: #d0d0d0;
+}
+
+.content {
+    padding: 30px;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.main-image img {
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image img {
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.blue {
+    background-color: #8cbeb2;
+}
+
+.red {
+    background-color: #f06060;
+}
+
+.orange {
+    background-color: #f3b562;
+}
+
+table {
+    border-top: 1px #303030 solid;
+    border-left: 1px #303030 solid;
+    margin-top: 20px;
+    border-spacing: 0;
+}
+
+th {
+    color: #dddddd;
+    background-color: #404040;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+td, th {
+    padding: 5px;
+    border-bottom: 1px #303030 solid;
+    border-right: 1px #303030 solid;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #40404030;
+}
+
+@media (max-width: 600px) {
+    .two-columns {
+        flex-direction: column;
+    }
+
+    .main-image img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+}
